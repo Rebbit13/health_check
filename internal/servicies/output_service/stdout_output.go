@@ -1,4 +1,4 @@
-package servicies
+package output_service
 
 import (
 	"fmt"
