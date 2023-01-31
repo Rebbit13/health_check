@@ -1,0 +1,8 @@
+*test_main.go
+
+.idea
+.env
+
+*.db
+*/.idea/
+/config.yaml
