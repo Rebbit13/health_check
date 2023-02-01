@@ -1,7 +1,10 @@
 package domain
 
 type Check struct {
-	Title string
+	Title          string
+	Pass           bool
+	ExpectedResult []byte
+	GotResult      []byte
 }
 
 type SiteToCheck struct {
@@ -11,7 +14,7 @@ type SiteToCheck struct {
 }
 
 type SiteChecked struct {
-	Url          string
-	Passed       bool
-	FailedChecks []string
+	Url    string
+	Passed bool
+	Checks []Check
 }
