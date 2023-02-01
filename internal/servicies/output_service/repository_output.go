@@ -16,7 +16,7 @@ type RepositoryOutput struct {
 	currentReport []*domain.SiteChecked
 }
 
-func NewStatusAlerts(repository Repository, alertSender AlertSender) *RepositoryOutput {
+func NewRepositoryOutput(repository Repository, alertSender AlertSender) *RepositoryOutput {
 	return &RepositoryOutput{repository: repository, alertSender: alertSender}
 }
 
